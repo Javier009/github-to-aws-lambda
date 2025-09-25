@@ -20,5 +20,5 @@ phases:
     - echo Build completed on `date`
     - aws s3 cp deployment-package.zip s3://lambda-function-code-bucket-009
     - echo Now updatigng the lambda function code...
-    - aws lambda update-function-code --function-name first-cicd-aws-function --s3 bucket lambda-function-code-bucket-009 --s3-key deployment-package.zip
+    - aws lambda update-function-code --function-name first-cicd-aws-function --s3-bucket lambda-function-code-bucket-009 --s3-key deployment-package.zip
   
