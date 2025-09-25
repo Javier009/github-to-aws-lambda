@@ -5,7 +5,8 @@ phases:
     runtime-versions:
       python: 3.12
     commands:
-    - echo Installing dependencies...
+      - mkdir lib
+      - echo Installing dependencies...
       - pip install -r requirements.txt -t lib  # Install dependencies to 'lib' directory
   build:
     commands:
