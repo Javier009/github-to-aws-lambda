@@ -14,7 +14,7 @@ phases:
     - cd lib
     - zip -g -r9 ../deployment-package.zip .
     - cd ..
-    - zip -g -r9 deployment-package.zip read_s3_file.py
+    - zip -g -r9 deployment-package.zip lambda_function.py
   post_build:
     commands:
     - echo Build completed on `date`
